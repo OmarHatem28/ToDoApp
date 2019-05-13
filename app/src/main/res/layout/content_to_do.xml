@@ -8,4 +8,10 @@
     tools:context=".Activities.ToDoActivity"
     tools:showIn="@layout/activity_to_do">
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
 </android.support.constraint.ConstraintLayout>

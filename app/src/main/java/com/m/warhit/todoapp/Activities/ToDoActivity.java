@@ -6,10 +6,17 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
+import com.m.warhit.todoapp.Models.ToDo;
 import com.m.warhit.todoapp.R;
 
+import java.util.ArrayList;
+
 public class ToDoActivity extends AppCompatActivity {
+
+    TextView textView;
+    ArrayList<ToDo> user_todo_list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +33,10 @@ public class ToDoActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        textView = findViewById(R.id.text);
+        user_todo_list = (ArrayList<ToDo>) getIntent().getSerializableExtra("user_todo_list");
+        textView.setText(user_todo_list.get(0).getTitle());
     }
 
 }

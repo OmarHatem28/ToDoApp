@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "365702511125-0jqij7ej3flnqlmv1a34ov8l7vgsbgjv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.m.warhit.todoapp",
+            "certificate_hash": "43a6edd7934ed7cdba53f37a0e7f9a4bb7267ea4"
+          }
+        },
+        {
           "client_id": "365702511125-41ocpqcvig7fihh3bctje83ans2dkdc7.apps.googleusercontent.com",
           "client_type": 3
         }
